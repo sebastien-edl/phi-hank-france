@@ -1,0 +1,6 @@
+sequence-jacobian
+numpy
+scipy
+pandas
+matplotlib
+jupyter
