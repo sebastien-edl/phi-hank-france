@@ -14,7 +14,7 @@ Code de réplication pour le working paper :
 
 Ce dépôt contient le code utilisé pour produire les résultats du papier **et** des extensions exploratoires qui **ne sont pas** dans le papier publié.
 
-Cette distinction est importante : seul le code listé sous **« Dans le papier »** est validé et documenté. Le reste est exploratoire, peut être incomplet, et ne doit pas être cité comme un résultat du papier.
+Cette distinction est importante : seul le code listé sous « Dans le papier » est validé et documenté. Le reste est exploratoire, peut être incomplet, et ne doit pas être cité comme un résultat du papier.
 
 ### Dans le papier (validé)
 
@@ -37,7 +37,7 @@ Cette distinction est importante : seul le code listé sous **« Dans le papier 
 | Φ différencié | Cellule 39 bis | Simulation historique 2000–2025 |
 | Simulation historique | Cellule 39 | Backtest 2000–2025 |
 
-**Ces extensions sont incluses par transparence**, pas comme résultats validés. Elles reflètent la vision plus large du projet (régulation institutionnelle de la demande solvable), mais elles ne font pas partie du papier SSRN et ne doivent pas être traitées comme telles.
+Ces extensions sont incluses par transparence, pas comme résultats validés. Elles reflètent la vision plus large du projet (régulation institutionnelle de la demande solvable), mais elles ne font pas partie du papier SSRN et ne doivent pas être traitées comme telles.
 
 ---
 
@@ -68,3 +68,10 @@ Modèle HANK (Heterogeneous Agent New Keynesian) one-asset avec :
 ---
 
 ## Structure du dépôt
+
+```text
+phi-hank-france/
+├── README.md
+├── V16_4.ipynb           # Notebook principal (sections 1 à 40)
+├── requirements.txt      # Dépendances Python
+└── LICENSE               # MIT
