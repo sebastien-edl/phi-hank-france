@@ -1,77 +1,80 @@
-# Modèle Φ — Stabilisateur automatique ciblé sur la demande solvable
+# Model Φ — Targeted Automatic Stabilizer for Solvable Demand
 
-Code de réplication pour le working paper :
+🇫🇷 **[Version française ici](README.fr.md)**
+
+Replication code for the working paper:
 
 > **The Missing Institution: Solvable Demand as a Macroeconomic Function — A HANK-Based Simulation for France**
-> Sébastien Delestre (Chercheur indépendant)
+> Sébastien Delestre (Independent Researcher)
 > SSRN Working Paper No. 7597138
 > DOI: [10.2139/ssrn.7597138](https://doi.org/10.2139/ssrn.7597138)
-> [Papier sur SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7597138)
+> [Paper on SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7597138)
 
 ---
 
-## Ce que contient ce dépôt
+## What this repository contains
 
-Ce dépôt contient le code utilisé pour produire les résultats du papier **et** des extensions exploratoires qui **ne sont pas** dans le papier publié.
+This repository contains the code used to produce the results in the paper **and** some exploratory extensions that are **not** part of the published paper.
 
-Cette distinction est importante : seul le code listé sous « Dans le papier » est validé et documenté. Le reste est exploratoire, peut être incomplet, et ne doit pas être cité comme un résultat du papier.
+This distinction matters: only the code listed under "In the paper" is validated and documented. The rest is exploratory, may be incomplete, and should not be cited as a result of the paper.
 
-### Dans le papier (validé)
+### In the paper (validated)
 
-| Section du papier | Fichier | Ce que fait le code |
+| Paper Section | File | What the code does |
 |---|---|---|
-| Section 4 : Modèle | `V16_4.ipynb` (cellules 1–11) | Modèle HANK one-asset, 10 états |
-| Section 4.2 : Calibration | `V16_4.ipynb` (cellule 10) | Continuation US → France |
-| Section 4.4 : Diagnostics | `V16_4.ipynb` (cellule 11) | β*, λ_HtM, MPC |
-| Section 5 : Résultats | `V16_4.ipynb` (cellules 12–21) | Multiplicateur, emploi, bilan |
-| Section 6 : Φ comme stabilisateur | `V16_4.ipynb` (cellule 6.3) | ε_Φ, α_Φ, Proposition 1 |
-| Figures 1–4 | `V16_4.ipynb` (cellule 40) | Les 4 figures du papier |
+| Section 4: Model | `V16_4.ipynb` (cells 1–11) | One-asset HANK model, 10 states |
+| Section 4.2: Calibration | `V16_4.ipynb` (cell 10) | US → France continuation |
+| Section 4.4: Diagnostics | `V16_4.ipynb` (cell 11) | β*, λ_HtM, MPC |
+| Section 5: Results | `V16_4.ipynb` (cells 12–21) | Multiplier, employment, balance |
+| Section 6: Φ as stabilizer | `V16_4.ipynb` (cell 6.3) | ε_Φ, α_Φ, Proposition 1 |
+| Figures 1–4 | `V16_4.ipynb` (cell 40) | The 4 figures of the paper |
 
-### Exploratoire (pas dans le papier)
+### Exploratory (not in the paper)
 
-| Extension | Cellules du notebook | Statut |
+| Extension | Notebook cells | Status |
 |---|---|---|
-| ARE (Autorité de Régulation Économique) | Cellules 28–32 | Design institutionnel, non testé |
-| Fonds Souverain | Cellules 33–36 | Design institutionnel, non testé |
-| Investissement stratégique | Cellule 39 | Design institutionnel, non testé |
-| Φ différencié | Cellule 39 bis | Simulation historique 2000–2025 |
-| Simulation historique | Cellule 39 | Backtest 2000–2025 |
+| ARE (Economic Regulation Authority) | Cells 28–32 | Institutional design, untested |
+| Sovereign Fund | Cells 33–36 | Institutional design, untested |
+| Strategic investment | Cell 39 | Institutional design, untested |
+| Differentiated Φ | Cell 39 bis | Historical simulation 2000–2025 |
+| Historical simulation | Cell 39 | Backtest 2000–2025 |
 
-Ces extensions sont incluses par transparence, pas comme résultats validés. Elles reflètent la vision plus large du projet (régulation institutionnelle de la demande solvable), mais elles ne font pas partie du papier SSRN et ne doivent pas être traitées comme telles.
+These extensions are included for transparency, not as validated results. They reflect the broader vision of the project (institutional regulation of solvable demand), but they are not part of the SSRN paper and should not be treated as such.
 
 ---
 
-## Le modèle
+## The model
 
-Modèle HANK (Heterogeneous Agent New Keynesian) one-asset avec :
+HANK (Heterogeneous Agent New Keynesian) one-asset model with:
 
-- Grille KMP 10 états (Kaplan-Moll-Violante 2018)
-- ARE à paliers (surprime anti-inflation à seuils)
-- Comparaison Two-Agent
-- Extension non-linéaire (courbure Phillips)
-- Fonds Souverain (bouclier inversé en récession)
+- 10-state KMP grid (Kaplan-Moll-Violante 2018)
+- Tiered ARE (anti-inflation surcharge with thresholds)
+- Two-Agent comparison
+- Nonlinear extension (Phillips curve curvature)
+- Sovereign Fund (inverse shield in recession)
 
-### Résultats clés
+### Key results
 
-| Indicateur | Valeur |
+| Indicator | Value |
 |---|---|
-| β* (France) | 0.9862 (réf. CepreHANK : 0.9870) |
-| λ_HtM | 26.9 % |
-| Multiplicateur μ (8T) | +0.775 |
-| Φ versé | 35.49 Md€/an |
-| Emplois créés (central) | ~183 k ETP |
-| Solde net État (central) | +9.75 Md€/an |
-| Marge de manœuvre | +4.73 Md€/an |
-| Δπ induit par Φ | +0.20 % (<< seuil ARE 2 %) |
-| Contribution à la stabilisation (Section 6) | ~1 % |
+| β* (France) | 0.9862 (ref. CepreHANK: 0.9870) |
+| λ_HtM | 26.9% |
+| Multiplier μ (8Q) | +0.775 |
+| Φ disbursed | €35.49 bn/year |
+| Jobs created (central) | ~183k FTE |
+| Net government balance (central) | +€9.75 bn/year |
+| Fiscal margin | +€4.73 bn/year |
+| Δπ induced by Φ | +0.20% (<< 2% ARE threshold) |
+| Stabilization contribution (Section 6) | ~1% |
 
 ---
 
-## Structure du dépôt
+## Repository structure
 
 ```text
 phi-hank-france/
-├── README.md
-├── V16_4.ipynb           # Notebook principal (sections 1 à 40)
-├── requirements.txt      # Dépendances Python
+├── README.md             # English version (this file)
+├── README.fr.md          # French version
+├── V16_4.ipynb           # Main notebook (sections 1 to 40)
+├── requirements.txt      # Python dependencies
 └── LICENSE               # MIT
