@@ -72,10 +72,10 @@ HANK (Heterogeneous Agent New Keynesian) one-asset model with:
 ## Repository structure
 
 phi-hank-france/
-├── README.md             # English version (this file)
-├── README.fr.md          # French version
+├── README.md                      # English version (this file)
+├── README.fr.md                   # French version
 ├── ECONOMIC_ARCHITECTURE_NOTE.md  # Economic intuition & philosophy
 ├── Economic_Architecture_Note.pdf # PDF version of the Note
-├── V16_4.ipynb           # Main notebook (sections 1 to 40)
-├── requirements.txt      # Python dependencies
-└── LICENSE               # MIT
+├── V16_4.ipynb                    # Main notebook (sections 1 to 40)
+├── requirements.txt               # Python dependencies
+└── LICENSE                        # MIT
