@@ -71,10 +71,11 @@ Modèle HANK (Heterogeneous Agent New Keynesian) one-asset avec :
 
 ## Structure du dépôt
 
-```text
 phi-hank-france/
-├── README.md             # English version
-├── README.fr.md          # Version française (ce fichier)
-├── V16_4.ipynb           # Notebook principal (sections 1 à 40)
-├── requirements.txt      # Dépendances Python
-└── LICENSE               # MIT
+├── README.md                      # Version anglaise
+├── README.fr.md                   # Version française (ce fichier)
+├── ECONOMIC_ARCHITECTURE_NOTE.md  # Note d'architecture économique
+├── Economic_Architecture_Note.pdf # Version PDF de la note
+├── V16_4.ipynb                    # Notebook principal (sections 1 à 40)
+├── requirements.txt               # Dépendances Python
+└── LICENSE                        # Licence MIT
