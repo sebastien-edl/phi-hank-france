@@ -58,7 +58,7 @@ The `V18_phi.ipynb` notebook unifies the entire project. It is structured into 8
 
 The notebook is designed to run from start to finish (`Runtime → Restart and Run All`).
 Estimated runtime: ~1h15.
-Upon completion, all 6 Checkpoints must display **OK (0 KO)**, and the `figures/` and `results/` folders must contain the 13 PNGs and backup files (pickles, audits, RECAP).
+Upon completion, all 6 Checkpoints must display **OK (0 KO)**, and the `figures V18/` and `results V18/` folders must contain the 13 PNGs and backup files (pickles, audits, RECAP).
 
 ## Repository Structure
 
@@ -70,8 +70,8 @@ phi-hank-france/
 ├── Economic_Architecture_Note.pdf
 ├── V18_phi.ipynb (Main v18 notebook)
 ├── requirements.txt
-├── figures/ (13 generated PNGs)
-├── results/ (Pickles, JSON, CSV)
+├── figures V18/ (13 generated PNGs)
+├── results V18/ (Pickles, JSON, CSV)
 └── LICENSE (MIT)
 
 Installation
