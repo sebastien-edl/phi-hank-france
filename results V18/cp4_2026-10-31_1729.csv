@@ -1,0 +1,26 @@
+Clé;Réel;Attendu;Écart;Statut
+pricing_simple existe;;—;—;OK
+arbitrage_simple existe;;—;—;OK
+labor existe;;—;—;OK
+investment existe;;—;—;OK
+taylor_threshold existe;;—;—;OK
+production_solved existe;;—;—;OK
+transfers_phi existe;;—;—;OK
+ARE_paliers_ta existe;;—;—;OK
+fiscal_slow existe;;—;—;OK
+hh_htm existe;;—;—;OK
+make_grids_htm existe;;—;—;OK
+mkt_clearing_htm existe;;—;—;OK
+dag_htm existe;;—;—;OK
+CONFIG_TA existe;;—;—;OK
+ARE_paliers_ta ≠ ARE_paliers;pas d'écrasement;—;—;OK
+CONFIG_TA a ≥ 10 clés;18;—;—;OK
+seuil_phi_htm ∈ (0, 2);0.4590;—;—;OK
+Phi_target ∈ (0, 0.10);0.035073;—;—;OK
+Phi_base_corrigee ∈ (-0.10, 0);-0.033072;—;—;OK
+tau_niche_cal ∈ (0, 1);0.014124;—;—;OK
+e_grid_cal = 10 points;10;—;—;OK
+Pi shape = (9, 9);(9, 9);—;—;OK
+statut E = 3 points;3;—;—;OK
+statut U_court = 3 points;3;—;—;OK
+statut U_long = 3 points;3;—;—;OK

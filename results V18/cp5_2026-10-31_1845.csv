@@ -1,0 +1,27 @@
+Clé;Réel;Attendu;Écart;Statut
+Phi_target;0.035073;0.035100;0.0000;OK
+u_court_ss;0.056294;0.056300;0.0000;OK
+u_long_ss;0.018498;0.018500;0.0000;OK
+beta;0.992410;0.992400;0.0000;OK
+chi1;14.999340;14.999300;0.0000;OK
+N;0.999806;0.999800;0.0000;OK
+Y;1.000000;1.000000;0.0000;OK
+w;0.725850;0.725800;0.0000;OK
+p;14.830000;14.830000;0.0000;OK
+h;0.999922;0.999900;0.0000;OK
+seuil_phi;0.663132;0.663100;0.0000;OK
+lambda_htM;0.260904;0.260900;0.0000;OK
+n_htm_ss;0.323803;0.323800;0.0000;OK
+part_CLD;0.247326;0.247300;0.0000;OK
+mu_lump_kink;0.043823;0.043800;0.0000;OK
+mu_niches_kink;0.199049;0.199000;0.0000;OK
+mu_broad_kink;0.236722;0.236700;0.0000;OK
+mu_niches_no_kink;0.193503;0.193500;0.0000;OK
+mu_lump_no_kink;-0.078350;-0.078400;0.0000;OK
+ss_15 existe;;—;—;OK
+resultats = 5 scénarios;5;—;—;OK
+resultats_sens = 3 modes;3;—;—;OK
+calib_audit existe;;—;—;OK
+r_base existe;;—;—;OK
+r_ref existe;;—;—;OK
+resultats_sub = 5 subventions;5;—;—;OK

@@ -1,0 +1,31 @@
+Clé;Réel;Attendu;Écart;Statut
+Phi_brut_mds;35.490780;35.490000;0.0008;OK
+Phi_net_mds;31.941702;31.940000;0.0017;OK
+Phi_star;0.012675;0.012675;0.0000;OK
+NICHES;32.000000;32.000000;0.0000;OK
+PRIME_TOTALE_NORMALE;1.500000;1.500000;0.0000;OK
+Phi_vigilance;29.575650;29.580000;0.0044;OK
+Phi_galopant;23.660520;23.660000;0.0005;OK
+Phi_recession;59.151300;59.150000;0.0013;OK
+POP_ACTIVE_FRANCE;30500000.000000;30500000.000000;0.0000;OK
+COUT_CHOMEUR_ANNUEL;20000.000000;20000.000000;0.0000;OK
+COTIS_MOYEN_ETP;13000.000000;13000.000000;0.0000;OK
+TAUX_PO_PIB;0.450000;0.450000;0.0000;OK
+TAUX_RETOUR_FISCAL;0.300000;0.300000;0.0000;OK
+part_C_INSEE;0.506022;0.506000;0.0000;OK
+part_I_INSEE;0.216308;0.216000;0.0003;OK
+part_M_INSEE;0.314332;0.314000;0.0003;OK
+part_X_INSEE;0.317655;0.318000;0.0003;OK
+hh existe;HetBlock;—;—;OK
+hh_extended existe;HetBlock;—;—;OK
+hh_ta existe;SolvedBlock;—;—;OK
+ARE_paliers existe;;—;—;OK
+nkpc existe;;—;—;OK
+ha a steady_state;;—;—;OK
+ha_regime a steady_state;;—;—;OK
+ta a steady_state;;—;—;OK
+ha_v17 a steady_state;;—;—;OK
+Dimensions KMP;10 = 2 × 5;—;—;OK
+smooth_step (0.4) disponible;;—;—;OK
+phi_are (0.4) disponible;;—;—;OK
+filter_regime (0.4) disponible;;—;—;OK

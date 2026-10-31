@@ -1,0 +1,42 @@
+Section;Catégorie;Indicateur;Valeur;Note
+A;Modèles;HANK one-asset (T=100);—;KMP 10 états, ARE paliers
+A;Modèles;Two-Asset (T=50, nZ=20);—;3 statuts E/Uc/Ul, seuil_phi=0.6631, p_UE=0.2301
+B;HANK — calibration;β*;0.9862;CepreHANK
+B;HANK — diagnostic;λ_HtM (abs);26.94 %;INSEE
+B;HANK — diagnostic;λ_HtM (KV);37.50 %;
+B;HANK — diagnostic;MPC agrégé;0.2028;
+B;HANK — diagnostic;MPC bénéficiaires;0.7817;
+C;HANK — multiplicateurs;μ (8T);+0.7752;AG12 / RZ18
+C;HANK — multiplicateurs;μ (32T);+0.8028;audit fenêtre
+C;HANK — multiplicateurs;μ (Taylor 0.5);+0.6439;
+C;HANK — multiplicateurs;μ (fuites 31 %);+0.5315;
+D;Two-Asset — SS;β;0.9924;
+D;Two-Asset — SS;χ1;14.9993;endogène
+D;Two-Asset — SS;λ_HtM;26.09 %;
+D;Two-Asset — SS;n_htm_ss;32.38 %;
+D;Two-Asset — SS;u_court_ss;5.63 %;INSEE T305
+D;Two-Asset — SS;u_long_ss;1.85 %;INSEE T305
+D;Two-Asset — SS;part CLD;24.73 %;INSEE T305
+E;Two-Asset — 5 modes (χ0=0.1);μ lump + kink;+0.0438;
+E;Two-Asset — 5 modes (χ0=0.1);μ niches + kink ★;+0.1990;référence
+E;Two-Asset — 5 modes (χ0=0.1);μ broad + kink;+0.2367;
+E;Two-Asset — 5 modes (χ0=0.1);μ niches sans kink;+0.1935;
+E;Two-Asset — 5 modes (χ0=0.1);μ lump sans kink;-0.0784;
+F;Two-Asset — χ0=0.20;μ lump;-0.0696;
+F;Two-Asset — χ0=0.20;μ niches;+0.2071;
+F;Two-Asset — χ0=0.20;μ broad;+0.2817;
+G;Dispositif Φ;Φ brut;35.49 Md€/an;1.50 €/h × 13M
+G;Dispositif Φ;Φ net;31.94 Md€/an;après IR 10%
+G;Dispositif Φ;Niches redirigées;32.00 Md€/an;CIR/R&D préservés
+H;Bilan État;Solde redistributif;+0.06 Md€;≈ neutre
+H;Bilan État;Solde net central §19;+9.75 Md€;"fourchette [+7.41 ; +12.09]"
+H;Bilan État;Solde net total §35;+9.41 Md€/an;endogène pur
+I;Caisse Φ;Déficit max;-16.94 Md€;mois 12
+I;Caisse Φ;Break-even;mois 25;
+I;Caisse Φ;Surplus annuel stable;+16.26 Md€/an;
+J;Emplois;Emplois Φ + bc;369 k ETP;additivité validée
+J;Emplois;Charges patronales;43 % → 41.85 %;1.147 pts baissés
+K;STAB;Rank(A_0);5/5 ✅;détermination
+K;STAB;min|det J(z)|;0.0597;> 0.01
+K;STAB;|λ| implicite;0.8745;< 1
+K;STAB;Dispersion μ;1.11e-16;< 1e-3

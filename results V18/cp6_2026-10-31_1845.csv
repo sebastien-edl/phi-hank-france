@@ -1,0 +1,7 @@
+Clé;Réel;Attendu;Écart;Statut
+hank_v18.pkl;0.31 Mo;—;—;OK
+hank_v18_audit.json;0.00 Mo;—;—;OK
+two_asset_v18.pkl;0.00 Mo;—;—;OK
+two_asset_v18_audit.json;0.00 Mo;—;—;OK
+HANK reload OK;7 clés;—;—;OK
+Two-Asset reload OK;7 clés;—;—;OK
