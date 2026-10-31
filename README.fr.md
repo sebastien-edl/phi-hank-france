@@ -1,81 +1,87 @@
 # Modèle Φ — Stabilisateur automatique ciblé sur la demande solvable
 
-🇬🇧 **[English version here](README.md)**
+🇬🇧 [English version here](README.md)
 
 Code de réplication pour le working paper :
+**The Missing Institution: Solvable Demand as a Macroeconomic Function — A HANK-Based Simulation for France**
+Sébastien Delestre (Chercheur indépendant)
+SSRN Working Paper No. 7597138 | [DOI: 10.2139/ssrn.7597138](https://doi.org/10.2139/ssrn.7597138)
 
-> **The Missing Institution: Solvable Demand as a Macroeconomic Function — A HANK-Based Simulation for France**
-> Sébastien Delestre (Chercheur indépendant)
-> SSRN Working Paper No. 7597138
-> DOI: [10.2139/ssrn.7597138](https://doi.org/10.2139/ssrn.7597138)
-> [Papier sur SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7597138)
+## À propos de ce dépôt
 
----
+Ce dépôt contient le code utilisé pour produire les résultats du papier, ainsi que les extensions exploratoires développées dans le cadre du projet (notamment le modèle à deux actifs).
 
-## Ce que contient ce dépôt
+**Distinction importante :** Seul le code identifié comme « validé » ci-dessous est documenté et reproduit les résultats du papier publié. Les extensions exploratoires sont incluses par transparence, mais ne doivent pas être citées comme des résultats du papier sans vérification préalable.
 
-Ce dépôt contient le code utilisé pour produire les résultats du papier **et** des extensions exploratoires qui **ne sont pas** dans le papier publié.
-
-Cette distinction est importante : seul le code listé sous « Dans le papier » est validé et documenté. Le reste est exploratoire, peut être incomplet, et ne doit pas être cité comme un résultat du papier.
+## Contenu du dépôt
 
 ### Dans le papier (validé)
+| Section du papier | Fichier | Contenu |
+| :--- | :--- | :--- |
+| Section 4 : Modèle | `V18_phi.ipynb` (Blocs 0-1) | Modèle HANK one-asset, 10 états (KMP) |
+| Section 4.2 : Calibration | `V18_phi.ipynb` (Bloc 2) | Continuation US → France |
+| Section 4.4 : Diagnostics | `V18_phi.ipynb` (Bloc 2) | β*, λ_HtM, MPC |
+| Section 5 : Résultats | `V18_phi.ipynb` (Bloc 3) | Multiplicateur, emploi, bilan budgétaire |
+| Section 6 : Φ comme stabilisateur | `V18_phi.ipynb` (Bloc 3) | ε_Φ, α_Φ, Proposition 1 |
+| Figures 1–4 | `V18_phi.ipynb` (Bloc 7) | Les figures du papier |
 
-| Section du papier | Fichier | Ce que fait le code |
-|---|---|---|
-| Section 4 : Modèle | `V16_4.ipynb` (cellules 1–11) | Modèle HANK one-asset, 10 états |
-| Section 4.2 : Calibration | `V16_4.ipynb` (cellule 10) | Continuation US → France |
-| Section 4.4 : Diagnostics | `V16_4.ipynb` (cellule 11) | β*, λ_HtM, MPC |
-| Section 5 : Résultats | `V16_4.ipynb` (cellules 12–21) | Multiplicateur, emploi, bilan |
-| Section 6 : Φ comme stabilisateur | `V16_4.ipynb` (cellule 6.3) | ε_Φ, α_Φ, Proposition 1 |
-| Figures 1–4 | `V16_4.ipynb` (cellule 40) | Les 4 figures du papier |
+### Exploratoire (hors papier, v18)
+Ces sections explorent la robustesse et les extensions du modèle. Elles sont documentées et reproductibles, mais ne font pas partie du papier SSRN.
+| Extension | Emplacement | Statut |
+| :--- | :--- | :--- |
+| Modèle Two-Asset (SJ) | `V18_phi.ipynb` (Blocs 4-5) | Testé (5 modes GE, courbe en cloche du kink) |
+| Simulation historique 2000–2025 | `V18_phi.ipynb` (Bloc 7) | Exploratoire (backtest) |
+| Fonds Souverain & Investissement | `V18_phi.ipynb` (Bloc 7) | Design institutionnel |
+| ARE (Autorité de Régulation) | `V18_phi.ipynb` (Blocs 1 & 4) | Design institutionnel |
 
-### Exploratoire (pas dans le papier)
+## Le modèle v18
 
-| Extension | Cellules du notebook | Statut |
-|---|---|---|
-| ARE (Autorité de Régulation Économique) | Cellules 28–32 | Design institutionnel, non testé |
-| Fonds Souverain | Cellules 33–36 | Design institutionnel, non testé |
-| Investissement stratégique | Cellule 39 | Design institutionnel, non testé |
-| Φ différencié | Cellule 39 bis | Simulation historique 2000–2025 |
-| Simulation historique | Cellule 39 | Backtest 2000–2025 |
+Le notebook `V18_phi.ipynb` unifie l'ensemble du projet. Il est structuré en 8 blocs (0 à 7) et intègre un système de **6 Checkpoints** (CP-1 à CP-6) qui vérifient 146 indicateurs par rapport à un dictionnaire `EXPECTED` de référence.
 
-Ces extensions sont incluses par transparence, pas comme résultats validés. Elles reflètent la vision plus large du projet (régulation institutionnelle de la demande solvable), mais elles ne font pas partie du papier SSRN et ne doivent pas être traitées comme telles.
+- **Blocs 0–3** : HANK one-asset, calibration, multiplicateurs, bilan budgétaire (résultats du papier).
+- **Blocs 4–5** : Modèle Two-Asset avec contrainte de liquidité et kink (extension).
+- **Blocs 6–7** : Sauvegardes, audits et simulation historique 2000–2025 (extensions).
 
----
-
-## Le modèle
-
-Modèle HANK (Heterogeneous Agent New Keynesian) one-asset avec :
-
-- Grille KMP 10 états (Kaplan-Moll-Violante 2018)
-- ARE à paliers (surprime anti-inflation à seuils)
-- Comparaison Two-Agent
-- Extension non-linéaire (courbure Phillips)
-- Fonds Souverain (bouclier inversé en récession)
-
-### Résultats clés
+## Résultats clés (HANK One-Asset)
 
 | Indicateur | Valeur |
-|---|---|
+| :--- | :--- |
 | β* (France) | 0.9862 (réf. CepreHANK : 0.9870) |
 | λ_HtM | 26.9 % |
 | Multiplicateur μ (8T) | +0.775 |
 | Φ versé | 35.49 Md€/an |
 | Emplois créés (central) | ~183 k ETP |
 | Solde net État (central) | +9.75 Md€/an |
-| Marge de manœuvre | +4.73 Md€/an |
 | Δπ induit par Φ | +0.20 % (<< seuil ARE 2 %) |
-| Contribution à la stabilisation (Section 6) | ~1 % |
 
----
+## Reproductibilité
+
+Le notebook est conçu pour être exécuté de bout en bout (`Runtime → Restart and Run All`).
+Durée estimée : ~1h15.
+À la fin de l'exécution, les 6 Checkpoints doivent afficher **OK (0 KO)**, et les dossiers `figures/` et `results/` doivent contenir les 13 PNG et les fichiers de sauvegarde (pickles, audits, RECAP).
 
 ## Structure du dépôt
 
-- phi-hank-france/
-  - README.md (Version anglaise)
-  - README.fr.md (Version française)
-  - ECONOMIC_ARCHITECTURE_NOTE.md (Intuition économique & philosophie)
-  - Economic_Architecture_Note.pdf (Version PDF de la note)
-  - V16_4.ipynb (Notebook principal, sections 1 à 40)
-  - requirements.txt (Dépendances Python)
-  - LICENSE (Licence MIT)
+
+phi-hank-france/
+├── README.md (Version anglaise)
+├── README.fr.md (Version française)
+├── ECONOMIC_ARCHITECTURE_NOTE.md
+├── Economic_Architecture_Note.pdf
+├── V18_phi.ipynb (Notebook principal v18)
+├── requirements.txt
+├── figures/ (13 PNG générées)
+├── results/ (Pickles, JSON, CSV)
+└── LICENSE (MIT)
+
+Installation
+git clone https://github.com/votre-nom/phi-hank-france.git
+cd phi-hank-france
+pip install -r requirements.txt
+jupyter notebook V18_phi.ipynb
+
+Déclaration d'usage de l'IA
+L'auteur a utilisé des assistants IA (notamment pour la génération de code Python et l'aide à la rédaction) dans la préparation de ce travail. Tous les résultats numériques ont été vérifiés, recalculés et validés par l'auteur. L'auteur assume l'entière responsabilité du contenu et des erreurs restantes.
+
+Licence
+Ce projet est sous licence MIT. Vous êtes libre de l'utiliser, de le modifier et de le distribuer, à condition de conserver la mention de copyright originale.
