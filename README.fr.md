@@ -58,7 +58,7 @@ Le notebook `V18_phi.ipynb` unifie l'ensemble du projet. Il est structuré en 8 
 
 Le notebook est conçu pour être exécuté de bout en bout (`Runtime → Restart and Run All`).
 Durée estimée : ~1h15.
-À la fin de l'exécution, les 6 Checkpoints doivent afficher **OK (0 KO)**, et les dossiers `figures/` et `results/` doivent contenir les 13 PNG et les fichiers de sauvegarde (pickles, audits, RECAP).
+À la fin de l'exécution, les 6 Checkpoints doivent afficher **OK (0 KO)**, et les dossiers `figures V18/` et `results V18/` doivent contenir les 13 PNG et les fichiers de sauvegarde (pickles, audits, RECAP).
 
 ## Structure du dépôt
 
@@ -70,8 +70,8 @@ phi-hank-france/
 ├── Economic_Architecture_Note.pdf
 ├── V18_phi.ipynb (Notebook principal v18)
 ├── requirements.txt
-├── figures/ (13 PNG générées)
-├── results/ (Pickles, JSON, CSV)
+├── figures V18/ (13 PNG générées)
+├── results V18/ (Pickles, JSON, CSV)
 └── LICENSE (MIT)
 
 Installation
