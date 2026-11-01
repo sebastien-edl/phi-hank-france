@@ -1,11 +1,13 @@
 # Φ Model — Targeted Automatic Stabilizer for Solvable Demand
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23862920.svg)](https://doi.org/10.5281/zenodo.23862920)
+
 🇫🇷 [Version française ici](README.fr.md)
 
 Replication code for the working paper:
-**The Missing Institution: Solvable Demand as a Macroeconomic Function — A HANK-Based Simulation for France**
+**The Missing Institution: Solvable Demand as a Macroeconomic Function — A HANK and Two-Asset Evaluation for France**
 Sébastien Delestre (Independent Researcher)
-SSRN Working Paper No. 7597138 | [DOI: 10.2139/ssrn.7597138](https://doi.org/10.2139/ssrn.7597138)
+Archived on Zenodo: [DOI: 10.5281/zenodo.23862920](https://doi.org/10.5281/zenodo.23862920) | SSRN Working Paper No. 7597138
 
 ## About this repository
 
