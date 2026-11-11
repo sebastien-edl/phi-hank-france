@@ -119,19 +119,3 @@ This project is licensed under the MIT License. You are free to use, modify, and
 
 text
 
----
-
-## 📋 Récapitulatif des 10 corrections appliquées
-
-| # | Avant | Après |
-|---|---|---|
-| 1 | `~183k FTE` | `369k FTE` (75.1k + 293.6k) |
-| 2 | `6.62 %` (implicite) | `6.73 %` (steady-state) |
-| 3 | `13 PNGs` | `10 PNGs` (+ note sur 7.3bis) |
-| 4 | `your-name` | `sebastien-edl` |
-| 5 | `Block 7` | `Blocks 7.2, 7.3` |
-| 6 | `~1h15` | `~1h30 to 1h45` |
-| 7 | `λ_HtM 26.9 %` | `26.94 %` |
-| 8 | *(absent)* | **Section Two-Asset** avec μ = 0.199, 0.237, 0.044, −0.078 |
-| 9 | *(absent)* | **Section « 3 Novel Observations »** sur le kink |
-| 10 | `SSRN No. 7597138` | conservé (à vérifier si confirmé) |
