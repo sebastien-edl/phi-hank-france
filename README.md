@@ -117,5 +117,5 @@ The author used AI assistants (notably for Python code generation and writing as
 License
 This project is licensed under the MIT License. You are free to use, modify, and distribute it, provided the original copyright notice is retained.
 
-text
+
 
