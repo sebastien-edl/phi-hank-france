@@ -100,6 +100,7 @@ phi-hank-france/
 ├── RESUME_EXECUTIF.md
 ├── ECONOMIC_ARCHITECTURE_NOTE.md
 ├── Economic_Architecture_Note.pdf
+├── paper.pdf
 ├── V18_phi.ipynb (Main v18 notebook)
 ├── requirements.txt
 ├── figures V18/ (10 generated PNGs by default)
